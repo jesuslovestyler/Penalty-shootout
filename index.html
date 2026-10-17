@@ -49,6 +49,28 @@
         padding: 12px 12px 28px;
       }
 
+      /* ---------- Home pill ---------- */
+      .topbar {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 10px;
+      }
+      .home-pill {
+        display: inline-block;
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        box-shadow: var(--shadow);
+        color: var(--ink);
+        font-family: "Barlow", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1;
+        padding: 8px 14px;
+        text-decoration: none;
+      }
+      .home-pill:active { transform: scale(0.97); }
+
       /* ---------- Scoreboard ---------- */
       .scoreboard {
         background: var(--panel);
@@ -300,6 +322,10 @@
   </head>
   <body>
     <div class="wrap">
+      <div class="topbar">
+        <a class="home-pill" href="https://jesuslovestyler.com/">⌂ Home</a>
+      </div>
+
       <!-- Scoreboard -->
       <section class="scoreboard" aria-label="Shootout score">
         <div class="score-row">
@@ -1048,5 +1074,6 @@
         requestAnimationFrame(loop);
       })();
     </script>
+    <script data-goatcounter="https://jesuslovestyler.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   </body>
 </html>
